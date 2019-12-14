@@ -11,5 +11,6 @@ public interface UserDao {
     void delete(User user);
     void update(User user);
     User findByNameAndPassword(String name, String password) throws NoResultException;
+    User findByName(String name) throws NoResultException;
 
 }

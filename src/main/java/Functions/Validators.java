@@ -2,6 +2,7 @@ package Functions;
 
 import DAO.UserDaoImpl;
 import Models.User;
+import Utils.MD5Util;
 
 import javax.persistence.NoResultException;
 import java.util.Date;
@@ -19,10 +20,16 @@ public class Validators {
     public static boolean validateUser(String name, String password){
         UserDaoImpl userDao = new UserDaoImpl();
         try{
-            userDao.findByNameAndPassword(name, password);
+            userDao.findByNameAndPassword(name, MD5Util.encrypt(password));
             return true;
         } catch (NoResultException e){
             return false;
         }
+    }
+
+    public static boolean validatePassword(String password){
+        Pattern pattern = Pattern.compile("(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=^.{6,}$)");
+        Matcher matcher = pattern.matcher(password);
+        return matcher.find() && password.length() < 20;
     }
 }

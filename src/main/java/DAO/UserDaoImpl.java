@@ -54,4 +54,13 @@ public class UserDaoImpl implements UserDao {
         criteria.select(root).where(cb.like(root.get("name"),name),cb.like(root.get("password"),password));
         return session.createQuery(criteria).getSingleResult();
     }
+
+    public User findByName(String name) throws NoResultException {
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<User> criteria = cb.createQuery(User.class);
+        Root<User> root = criteria.from(User.class);
+        criteria.select(root).where(cb.like(root.get("name"),name));
+        return session.createQuery(criteria).getSingleResult();
+    }
 }

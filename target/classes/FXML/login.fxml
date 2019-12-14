@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Text?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Pages.Controllers.LoginPageController">
-   <children>
       <Text layoutX="198.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in" textAlignment="CENTER" wrappingWidth="171.13671875">
          <font>
             <Font name="Times New Roman" size="18.0" />
@@ -17,12 +16,11 @@
       </Text>
       <TextField fx:id="name" layoutX="192.0" layoutY="112.0" prefHeight="25.0" prefWidth="185.0" promptText="name" />
       <Button fx:id="signIn" layoutX="232.0" layoutY="233.0" mnemonicParsing="false" onAction="#onSignInClick" prefHeight="25.0" prefWidth="104.0" text="Sign in" />
-      <Button layoutX="454.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Sing up" />
+      <Button fx:id="signUp" layoutX="454.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Sing up" onAction="#onSignUpClick"/>
       <PasswordField fx:id="password" layoutX="192.0" layoutY="165.0" prefHeight="25.0" prefWidth="185.0" promptText="password" />
       <Label fx:id="label" layoutX="159.0" layoutY="204.0" prefHeight="20.0" prefWidth="250.0" textAlignment="CENTER" textFill="#e40e0e">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-   </children>
 </Pane>
