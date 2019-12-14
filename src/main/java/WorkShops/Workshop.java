@@ -33,6 +33,10 @@ public abstract class Workshop implements Serializable {
         return name;
     }
 
+    public ArrayList<String> getTelephoneNumbers() {
+        return telephoneNumbers;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

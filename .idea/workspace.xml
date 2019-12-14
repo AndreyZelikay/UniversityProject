@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe03311-d4b2-47ba-9ac9-c9167e86bc3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/MD5Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Validators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Validators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/LoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/RegistrationPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/RegistrationPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/Validators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/Validators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interfaces/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaces/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/LoginPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/RegistrationPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/RegistrationPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkShops.ser" beforeDir="false" afterPath="$PROJECT_DIR$/WorkShops.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/WorkShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/WorkShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TelephoneNumber/TelephoneNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TelephoneNumber/TypeOfTelephoneNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkShops/AutoRepairShop/AutoRepairShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkShops/AutoRepairShop/AutoRepairShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkShops/Workshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkShops/Workshop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/workShop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/workShop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/workShop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/workShop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/WorkShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/WorkShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TelephoneNumber/TelephoneNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TelephoneNumber/TypeOfTelephoneNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WorkShops/AutoRepairShop/AutoRepairShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkShops/AutoRepairShop/AutoRepairShop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WorkShops/Workshop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkShops/Workshop.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576336388556</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login and registration">
+      <created>1576342522458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576342522458</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +191,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="last commit" />
     <MESSAGE value="login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="login page" />
+    <MESSAGE value="login and registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="login and registration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="350" y="0" key="#Project_Structure" timestamp="1576331816903">
@@ -197,14 +205,14 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1576317421006" />
     <state x="144" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576332597705" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1576339878920">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1576349592739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576339878920" />
-    <state x="577" y="114" key="CommitChangelistDialog2" timestamp="1576336517716">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576349592739" />
+    <state x="577" y="114" key="CommitChangelistDialog2" timestamp="1576342521877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576336517716" />
+    <state x="577" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576342521877" />
     <state x="416" y="55" key="DetectedRootsChooserDialog" timestamp="1576317237660">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -214,26 +222,26 @@
     </state>
     <state x="369" y="67" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1576321384952" />
     <state x="554" y="102" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576329673634" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1576342450543">
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1576352676583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576324634090" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576342450543" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1576342450543">
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
+    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1576352676583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576324634089" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576342450543" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1576342450543">
+    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
+    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1576352676583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576324634089" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576342450543" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1576342450543">
+    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
+    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1576352676583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576324634090" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576342450543" />
+    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1576340759643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,10 +271,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1576324243025" />
     <state x="213" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576341954401" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576328590881">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576342527964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576328590881" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576342527964" />
     <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576332660230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

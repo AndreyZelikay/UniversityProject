@@ -26,6 +26,14 @@ public class AutoRepairShop extends Workshop  implements ParsableFromFile, Seria
         masters = new ArrayList<>();
     }
 
+    public ArrayList<String> getTypeOfRepairingCars() {
+        return typeOfRepairingCars;
+    }
+
+    public ArrayList<Master> getMasters() {
+        return masters;
+    }
+
     public void parseFromFile(String nameOfFile) throws IOException, ParseException {
         parse(nameOfFile,this);
     }
