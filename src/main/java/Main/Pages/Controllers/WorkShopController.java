@@ -3,6 +3,7 @@ package Main.Pages.Controllers;
 import Functions.Parsers;
 import Functions.Validators;
 import Main.Pages.Alert;
+import Utils.VBoxUtil;
 import WorkShops.AutoRepairShop.AutoRepairShop;
 import WorkShops.AutoRepairShop.Master.Master;
 import javafx.fxml.FXML;
@@ -31,11 +32,11 @@ public class WorkShopController {
     TextField nameField;
 
     @FXML
-    ListView<String> cars;
+    VBox cars;
     @FXML
     VBox numbers;
     @FXML
-    ListView<Master> masters;
+    VBox masters;
 
     private AutoRepairShop repairShop;
 
@@ -44,16 +45,16 @@ public class WorkShopController {
             repairShop.setOpeningDate(Parsers.parseDate(date.getText()));
             repairShop.setName(nameField.getText());
             repairShop.setAddress(address.getText());
-            for(int i = 0; i < numbers.getChildren().size(); i++){
-                HBox hBox = (HBox) numbers.getChildren().get(i);
-                TextField textField = (TextField) hBox.getChildren().get(0);
-                Validators.validateNumber(textField.getText());
-                repairShop.getTelephoneNumbers().set(i,textField.getText());
-            }
+            repairShop.getTelephoneNumbers().clear();
+            repairShop.setMasters(Parsers.parseMastersFromVBox(masters));
+            repairShop.setTypeOfRepairingCars(Parsers.parseCarsFromVBox(cars));
+            repairShop.setTelephoneNumbers(Parsers.parseNumbersFromVBox(numbers));
             Stage stage = (Stage) submitButton.getScene().getWindow();
             stage.close();
-        } catch (ParseException | IllegalArgumentException e){
+        } catch (ParseException e){
             Alert.show("Illegal arguments");
+        } catch (IllegalArgumentException e){
+            Alert.show(e.getMessage());
         }
     }
 
@@ -63,12 +64,8 @@ public class WorkShopController {
         nameField.setText(repairShop.getName());
         address.setText(repairShop.getAddress());
         date.setText(repairShop.getOpeningDate());
-        for(String number: repairShop.getTelephoneNumbers()){
-            HBox hBox = new HBox();
-            Button button = new Button("-");
-            button.setOnAction(e->numbers.getChildren().remove(hBox));
-            hBox.getChildren().addAll(new TextField(number), button);
-            numbers.getChildren().add(hBox);
-        }
+        VBoxUtil.createVBox(repairShop.getTypeOfRepairingCars(), cars);
+        VBoxUtil.createVBox(repairShop.getTelephoneNumbers(), numbers);
+        VBoxUtil.createVBox(repairShop.getMasters(), masters);
     }
 }

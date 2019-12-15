@@ -55,8 +55,6 @@ public class Master implements Serializable {
 
     @Override
     public String toString(){
-        StringBuilder information = new StringBuilder();
-        information.append(name).append(" ");
-        return information.toString();
+        return name;
     }
 }

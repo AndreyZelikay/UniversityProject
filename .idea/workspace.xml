@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe03311-d4b2-47ba-9ac9-c9167e86bc3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/VBoxUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UniversityProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UniversityProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorkShops.ser" beforeDir="false" afterPath="$PROJECT_DIR$/WorkShops.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Parsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Parsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/WorkShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Pages/Controllers/WorkShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TelephoneNumber/TelephoneNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TelephoneNumber/TypeOfTelephoneNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkShops/AutoRepairShop/AutoRepairShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkShops/AutoRepairShop/AutoRepairShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkShops/Workshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkShops/Workshop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkShops/AutoRepairShop/Master/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkShops/AutoRepairShop/Master/Master.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/workShop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/workShop.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FXML/workShop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/workShop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/Parsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/Parsers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/WorkShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Pages/Controllers/WorkShopController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TelephoneNumber/TelephoneNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TelephoneNumber/TypeOfTelephoneNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkShops/AutoRepairShop/AutoRepairShop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkShops/AutoRepairShop/AutoRepairShop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkShops/Workshop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkShops/Workshop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WorkShops/AutoRepairShop/Master/Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkShops/AutoRepairShop/Master/Master.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -137,12 +135,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - users@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -160,6 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576315536228</updated>
       <workItem from="1576315541013" duration="7360000" />
+      <workItem from="1576423075610" duration="6167000" />
     </task>
     <task id="LOCAL-00001" summary="last commit">
       <created>1576328587538</created>
@@ -182,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576342522458</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="repairshop page in processing">
+      <created>1576352904207</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576352904207</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +193,8 @@
     <MESSAGE value="last commit" />
     <MESSAGE value="login page" />
     <MESSAGE value="login and registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="login and registration" />
+    <MESSAGE value="repairshop page in processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="repairshop page in processing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="350" y="0" key="#Project_Structure" timestamp="1576331816903">
@@ -209,10 +211,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576349592739" />
-    <state x="577" y="114" key="CommitChangelistDialog2" timestamp="1576342521877">
+    <state x="577" y="114" key="CommitChangelistDialog2" timestamp="1576352903448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576342521877" />
+    <state x="577" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576352903448" />
     <state x="416" y="55" key="DetectedRootsChooserDialog" timestamp="1576317237660">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -222,46 +224,46 @@
     </state>
     <state x="369" y="67" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1576321384952" />
     <state x="554" y="102" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576329673634" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1576352676583">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576429804708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576324634090" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1576352676583">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576429804708" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576429804708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576324634089" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1576352676583">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576429804708" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576429804708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576324634089" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1576352676583">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576429804708" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576429804708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576324634090" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576352676583" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1576340759643">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576429804708" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1576429722221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576324352426" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576340759643" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1576340759643">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576429722221" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1576429722221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1576324352426" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576340759643" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1576340759643">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576429722221" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1576429722221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1576324352426" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576340759643" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1576340759643">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576429722221" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1576429722221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1576324352426" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576340759643" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576429722221" />
     <state x="335" y="39" key="NewModule_or_Project.wizard" timestamp="1576321391705">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -271,22 +273,26 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1576324243025" />
     <state x="213" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576341954401" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576342527964">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576352905968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576342527964" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576352905968" />
     <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576332660230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576332660230" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576423092876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576423092876" />
     <state x="396" y="233" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576317012971">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="233" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1576317012971" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576336380054">
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576429828025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576336380054" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576429828025" />
     <state x="112" y="35" key="new project wizard" timestamp="1576323373483">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
