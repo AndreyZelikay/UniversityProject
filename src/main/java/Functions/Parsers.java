@@ -1,7 +1,6 @@
 package Functions;
 
 import WorkShops.AutoRepairShop.AutoRepairShop;
-import WorkShops.AutoRepairShop.Master.Master;
 import WorkShops.WorkShopList;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
@@ -64,12 +63,12 @@ public class Parsers {
         return result;
     }
 
-    public static ArrayList<Master> parseMastersFromVBox(VBox vBox){
-        ArrayList<Master> result = new ArrayList<>();
+    public static ArrayList<String> parseMastersFromVBox(VBox vBox){
+        ArrayList<String> result = new ArrayList<>();
         for(Node children: vBox.getChildren().subList(0, vBox.getChildren().size() - 1)) {
             String value = parseHBox((HBox) children);
             if(!value.isEmpty()){
-                result.add(new Master(value));
+                result.add(value);
             } else {
                 throw new IllegalArgumentException("unable to parse empty master");
             }

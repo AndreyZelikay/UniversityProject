@@ -5,7 +5,6 @@ import Functions.Validators;
 import Main.Pages.Alert;
 import Utils.VBoxUtil;
 import WorkShops.AutoRepairShop.AutoRepairShop;
-import WorkShops.AutoRepairShop.Master.Master;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
@@ -63,7 +62,7 @@ public class WorkShopController {
         name.setText(repairShop.getName());
         nameField.setText(repairShop.getName());
         address.setText(repairShop.getAddress());
-        date.setText(repairShop.getOpeningDate());
+        date.setText(repairShop.getOpeningDateString());
         VBoxUtil.createVBox(repairShop.getTypeOfRepairingCars(), cars);
         VBoxUtil.createVBox(repairShop.getTelephoneNumbers(), numbers);
         VBoxUtil.createVBox(repairShop.getMasters(), masters);

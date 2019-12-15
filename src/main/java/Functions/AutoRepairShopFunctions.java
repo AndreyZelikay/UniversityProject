@@ -1,7 +1,6 @@
 package Functions;
 
 import WorkShops.AutoRepairShop.AutoRepairShop;
-import WorkShops.AutoRepairShop.Master.Master;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -40,12 +39,11 @@ public class AutoRepairShopFunctions {
         reader.close();
     }
 
-    private static ArrayList<Master> parseMasters(BufferedReader reader) throws IOException {
-        ArrayList<Master> masters = new ArrayList<>();
+    private static ArrayList<String> parseMasters(BufferedReader reader) throws IOException {
+        ArrayList<String> masters = new ArrayList<>();
         String line;
         while ((line = reader.readLine()) != null) {
-            Master master = new Master(line);
-            masters.add(master);
+            masters.add(line);
         }
         return masters;
     }

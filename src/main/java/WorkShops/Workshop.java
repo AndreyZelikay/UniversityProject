@@ -1,7 +1,5 @@
 package WorkShops;
 
-import WorkShops.AutoRepairShop.Master.Master;
-
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -24,7 +22,11 @@ public abstract class Workshop implements Serializable {
         return address;
     }
 
-    public String getOpeningDate() {
+    public Date getOpeningDate() {
+        return openingDate;
+    }
+
+    public String getOpeningDateString() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
         return dateFormat.format(openingDate);
     }
@@ -57,9 +59,9 @@ public abstract class Workshop implements Serializable {
         this.openingDate = date;
     }
 
-    public abstract void setMasters(ArrayList<Master> masters);
+    public abstract void setMasters(ArrayList<String> masters);
 
-    public abstract void addMaster(Master master);
+    public abstract void addMaster(String master);
 
     @Override
     public String toString() {

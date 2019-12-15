@@ -1,7 +1,6 @@
 package WorkShops.AutoRepairShop;
 
 import Interfaces.ParsableFromFile;
-import WorkShops.AutoRepairShop.Master.Master;
 import WorkShops.Workshop;
 
 import java.io.FileWriter;
@@ -18,7 +17,7 @@ public class AutoRepairShop extends Workshop  implements ParsableFromFile, Seria
     private static final long serialVersionUID = 1L;
 
     private ArrayList<String> typeOfRepairingCars;
-    private ArrayList<Master> masters;
+    private ArrayList<String> masters;
 
     public AutoRepairShop(){
         super();
@@ -30,7 +29,7 @@ public class AutoRepairShop extends Workshop  implements ParsableFromFile, Seria
         return typeOfRepairingCars;
     }
 
-    public ArrayList<Master> getMasters() {
+    public ArrayList<String> getMasters() {
         return masters;
     }
 
@@ -44,17 +43,13 @@ public class AutoRepairShop extends Workshop  implements ParsableFromFile, Seria
         fileWriter.close();
     }
 
-    public void addTypeOfRepairingCar(String nameOfBrand) {
-        typeOfRepairingCars.add(nameOfBrand);
-    }
-
     @Override
-    public void addMaster(Master master) {
+    public void addMaster(String master) {
         this.masters.add(master);
     }
 
     @Override
-    public void setMasters(ArrayList<Master> masters) {
+    public void setMasters(ArrayList<String> masters) {
         this.masters = masters;
     }
 
