@@ -8,6 +8,7 @@ import WorkShops.WorkShopList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -20,11 +21,15 @@ public class MainPageController {
     @FXML
     ListView<String> listView;
 
+    @FXML
+    Button addButton;
+
     public boolean isChangesSaved;
 
     private WorkShopList shopList;
 
     public void setParameters(String parameters) throws IOException, ClassNotFoundException, ParseException {
+        isChangesSaved = true;
         shopList = new WorkShopList();
         switch (parameters) {
             case "Parse from file":
@@ -47,6 +52,7 @@ public class MainPageController {
             listView.setOnMouseClicked(e -> {
                 try {
                     WorkShopPage.show(shopList.get(listView.getSelectionModel().getSelectedIndex()));
+                    isChangesSaved = false;
                     fillListView();
                 } catch (IOException ex) {
                     Alert.show("Can not open this page!");
@@ -74,5 +80,15 @@ public class MainPageController {
         }
         isChangesSaved = true;
         saveButton.setDisable(true);
+        addButton.setDisable(true);
+    }
+
+    public void onAddButtonClick(){
+        try {
+            shopList.put(WorkShopPage.showEmptyShop());
+            fillListView();
+        } catch (IOException e) {
+            Alert.show(e.getMessage());
+        }
     }
 }

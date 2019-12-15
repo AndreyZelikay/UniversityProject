@@ -27,8 +27,11 @@ public abstract class Workshop implements Serializable {
     }
 
     public String getOpeningDateString() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
-        return dateFormat.format(openingDate);
+        if(openingDate != null) {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
+            return dateFormat.format(openingDate);
+        }
+        return "";
     }
 
     public String getName() {

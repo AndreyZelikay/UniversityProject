@@ -22,4 +22,10 @@ public class WorkShopPage {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }
+
+    public static AutoRepairShop showEmptyShop() throws IOException {
+        AutoRepairShop repairShop = new AutoRepairShop();
+        show(repairShop);
+        return repairShop;
+    }
 }
